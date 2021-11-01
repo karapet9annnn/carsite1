@@ -1,0 +1,387 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+button{border: none;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+/*NAVBAR//////////////////////////////////////////////////////////////////////*/
+.navbar	{
+	width: 100%;
+	padding: 10px;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+}
+.navbar_items{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	max-width: 75vw;
+}
+.navbarLinks a{
+	font-size: 20px;
+		color:#fff;
+		opacity: 0.7;
+	 margin-left: 45px;     
+	text-align: center;
+	transition: .3s;
+}
+
+.navbarLinks a:hover{
+	opacity: 1;
+}
+
+/*CONTENT////////////////////////////////////////////////////////////////////////*/
+.content{
+	margin:110px  auto 0 auto;
+	display: flex;
+	max-width: 75vw;
+	justify-content: space-between;
+	height: 100%;
+}
+body{
+
+	background: url(https://ag-spots-2020.o.auroraobjects.eu/2020/10/07/bmw-m5-e60-2005-c326007102020170253_2.jpg) no-repeat;
+	background-size:100%;
+
+}
+
+.parag p{
+	color: #fff;
+	font-size: 35px;
+	width: 100%;
+	font-family: 'Raleway', sans-serif;
+}
+.parag{
+	margin-top: 33px;
+	position: relative;
+}
+.parag:after{
+	margin-top: 35px;
+	position: absolute;
+	width:70px; 
+	height:2px; 
+	background: #fff; 
+	content:"";
+}
+.downloadBtn{
+	font-size: 30px;
+	margin-top: 44px;
+	text-align: center;
+	padding: 15px;
+	color: #fff;
+	width: 100%;
+	max-width: 260px;
+	border-radius: 13px;
+	border: 2px solid #fff;
+	transition: .3s;
+}
+.downloadBtn:hover{
+	
+	background-color:rgba(0, 0, 0, 0.8);
+}
+.leftPanel{
+	display: flex;
+	flex-direction: column;
+}
+.paragraph{
+	line-height: 50px;
+	letter-spacing: 2	px;
+	max-width: 900px;
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	font-size: 30px;
+	margin-top: 82px;
+}
+
+
+/*TABS////////////////////////////////////////////////////////////////////////*/
+.background{
+	background-color: #f5f5f5;
+	width: 100%;
+}
+.tabsContainer{
+	padding: 150px 0 115px 0;
+	max-width: 70vw;
+	height: 100%;
+	margin: 0 auto;
+}
+.tab_text{
+
+	display: none;
+}
+.tab_text.active{
+
+	display: block;
+}
+.tab_btn{
+	user-select: none;
+	width: 100px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 15px;
+
+	background-color:#000000;
+	color: #fff;
+}
+.tab_btn.active{
+	background-color:#ff8b38;
+}
+
+.tab_h{
+	font-size: 35px;
+	margin-bottom: 20px;
+}
+.tab_p{
+	font-family: 'Open Sans', sans-serif;
+	color: #86878b;
+	max-width: 800px;
+	font-size: 15px;	
+}
+.tab_p.active{
+	display: block;
+}
+.tab_items{
+	display: flex;
+	justify-content:space-between;
+}
+.tab_img{
+
+	width: auto;
+	height: 200px;
+}
+
+.tab_download{
+	margin-top: 60px;
+	color: #fff;
+	background-color:#ff8b38;
+	padding: 15px 16px;
+	border-radius: 10px;
+}
+
+/*SUBLIST SECTION////////////////////////////////////////////////////////////////////////*/
+.sublist_section{
+	max-width: 75vw;
+
+	margin: 110px auto;
+	display: flex;
+	justify-content: space-between;
+
+
+}
+.image_container img{
+	margin-top: 30px;
+	max-width: 450px;
+	max-height: 300px;
+  box-shadow: 0px 10px 10px #888888 ;
+}
+.section{
+
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	max-width: 470px;
+}
+.section_info{
+	font-weight: 700;
+	font-size: 20px;
+}
+.section_info:after{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: block;
+	width:70px; 
+	height:2px; 
+	background-color: #ff8b38; 
+	content:"";
+}
+.section_items{
+	margin-top: 45px;
+	display: flex;
+
+}
+.section_title{
+	line-height: 20px;
+	font-size: 14px;
+	margin-left: 30px;
+}
+.section_title h1{
+	margin-bottom: 12px;
+}
+.section_icon{
+	width: 40px;
+	height:40px;
+	padding: 10px;
+	border: 2px solid #ff8b38;
+	border-radius: 50%;
+	background: url('../img/ico1.png') no-repeat;
+	background-position: center;
+}
+
+/*SUBLIST SECTION2////////////////////////////////////////////////////////////////////////*/
+.section_container{
+	padding: 90px 0 90px 0;
+	background-color: #f5f5f5;
+}
+.second_section{
+	display: flex;
+	justify-content:space-between;
+	max-width: 75vw;
+	margin: 0px auto;
+}
+.first_item{
+	max-width: 480px;
+}
+.second_item{
+	  box-shadow: -3px 10px 10px #888888 ;
+}
+.h1{
+	margin-top: 15px;
+	font-size: 20px;
+	color: #212121;
+}
+.h1:after{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: block;
+	width:70px; 
+	height:2px; 
+	background-color: #ff8b38; 
+	content:"";
+}
+.parag1{
+	color: #86878b;
+	line-height: 20px;
+}
+
+/*CONTACT US////////////////////////////////////////////////////////////////////////*/
+
+textarea{
+	width: 500px;
+	resize: none;
+}
+.contact_h{
+	font-family: Raleway;
+font-size: 36px;
+line-height: 43px;
+font-weight: 400;
+color: #212121;
+}
+.contact_h:after{
+	content: "";
+	display: block;
+	margin: 30px auto 30px;
+	width: 64px;
+	height: 2px;
+	background-color:#ff8b38;
+}
+.contact_p{
+margin-bottom: 80px;
+font-size: 14px;
+line-height: 20px;
+font-weight: 400;
+color: #86878b;
+}
+.parent{
+	margin: 100px auto;
+	max-width: 75vw;
+}
+.contact_top{
+
+	text-align: center;
+}
+.contact_input{
+	display: flex;
+}
+.contact_first{
+	margin-right: 50px;
+}
+.contact_first input{
+	box-shadow: 0px 1px 0px 0px rgba(0,0,1,0.15);
+	border:none;
+	width: 527px;
+	margin-bottom: 30px;
+height: 31px;
+padding: 10px;
+
+}
+textarea{
+	height: 300px;
+	box-shadow: -5px 5px 10px gray;
+	border: none;
+}
+textarea::placeholder{
+	padding: 10px;
+}
+*::placeholder{
+	font-family: Raleway;
+	
+	font-size: 16px;
+	color: #bdbdbd;
+
+}
+
+/*FOOTER////////////////////////////////////////////////////////////////////////*/
+footer{
+	padding-top: 15px;
+ 	height: 50px; 
+ 	background: black;
+	min-height: 15%;
+}
+.footer_container{
+	text-align: center;
+}
+.footer_icons img{
+	margin: 20px;
+	max-width: 40px;
+}
+.footer_copyright{
+	color: #fff	;
+}
+
+
+
+
